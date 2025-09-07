@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  ehrms:
+    build: .
+    image: dockerfile
+    ports:
+      - "10000:10000"
+    restart: unless-stopped
