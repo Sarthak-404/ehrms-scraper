@@ -3,6 +3,8 @@ services:
   ehrms:
     build: .
     image: dockerfile
+    environment:
+      - PORT=10000
     ports:
       - "10000:10000"
     restart: unless-stopped
