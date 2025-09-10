@@ -43,6 +43,6 @@ COPY app.py /app/
 EXPOSE 10000
 
 # Start the FastAPI app with uvicorn
-# CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
 # for render otherwise use above
-CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
+# CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port ${PORT}"]
